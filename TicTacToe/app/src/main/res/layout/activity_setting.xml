@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/relative_setting"
+    tools:context=".SettingActivity">
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_player1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/panda"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_two"
+            android:layout_toRightOf="@+id/linear_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/text_player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shawon"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_horizontal1"
+        android:layout_below="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"/>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_2"
+        android:layout_below="@id/view_horizontal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_player2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/jerri"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_2"
+            android:layout_toRightOf="@+id/linear_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/text_player2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahsan"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_horizontal2"
+        android:layout_below="@+id/relative_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_3"
+        android:layout_below="@id/view_horizontal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image_default"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/default_image"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_32"
+            android:layout_toRightOf="@+id/linear_31"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingTop="35dp"
+                android:text="Default Image"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/text_switch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Switch Player"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/border"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_horizontal3"
+        android:layout_below="@+id/relative_3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"/>
+    <Button
+        android:id="@+id/button_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/view_horizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_shape"
+        android:text="Change Background Theme"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <View
+       android:id="@+id/view_horizontal4"
+        android:layout_below="@+id/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"/>
+
+
+</RelativeLayout>
